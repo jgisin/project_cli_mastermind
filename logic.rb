@@ -14,7 +14,10 @@ class Logic
     test_winning_board = winning_board.dup
     guess_board.each_with_index do |color, index|
       if test_winning_board.include?(color)
+        puts "#{color}-color  #{index}-index"
+        puts "#{test_winning_board}"
         test_winning_board[index] = "Processed"
+        puts "#{test_winning_board} test winning board"
         color_count += 1
       end
     end

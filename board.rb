@@ -13,6 +13,7 @@ class Board
 
 
   def render_logic(winning_board, guess_board)
+    #puts "#{guess_board} - render logic guess board"
     colors = @logic.evaluate_color(winning_board, guess_board)
     position = @logic.evaluate_position(winning_board, guess_board)
     "correct colors: #{colors}, correct positions: #{position}"
